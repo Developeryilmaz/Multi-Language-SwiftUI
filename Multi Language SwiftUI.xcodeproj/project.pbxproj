@@ -14,6 +14,11 @@
 		02849E742A18642900B71BE0 /* Multi_Language_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02849E732A18642900B71BE0 /* Multi_Language_SwiftUITests.swift */; };
 		02849E7E2A18642900B71BE0 /* Multi_Language_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02849E7D2A18642900B71BE0 /* Multi_Language_SwiftUIUITests.swift */; };
 		02849E802A18642900B71BE0 /* Multi_Language_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02849E7F2A18642900B71BE0 /* Multi_Language_SwiftUIUITestsLaunchTests.swift */; };
+		02849E912A18671600B71BE0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02849E902A18671600B71BE0 /* SettingsView.swift */; };
+		02849E952A18678400B71BE0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02849E972A18678400B71BE0 /* Localizable.strings */; };
+		02849E9D2A186A9900B71BE0 /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02849E9C2A186A9900B71BE0 /* LanguageViewModel.swift */; };
+		02849E9F2A186B0F00B71BE0 /* AppLanguageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02849E9E2A186B0F00B71BE0 /* AppLanguageEnum.swift */; };
+		02849EA12A186B3000B71BE0 /* AppLanguageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02849EA02A186B3000B71BE0 /* AppLanguageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,14 @@
 		02849E792A18642900B71BE0 /* Multi Language SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Multi Language SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02849E7D2A18642900B71BE0 /* Multi_Language_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multi_Language_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		02849E7F2A18642900B71BE0 /* Multi_Language_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multi_Language_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		02849E902A18671600B71BE0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		02849E962A18678400B71BE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		02849E982A18679500B71BE0 /* az */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = az; path = az.lproj/Localizable.strings; sourceTree = "<group>"; };
+		02849E992A18679600B71BE0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		02849E9A2A18679600B71BE0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		02849E9C2A186A9900B71BE0 /* LanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
+		02849E9E2A186B0F00B71BE0 /* AppLanguageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguageEnum.swift; sourceTree = "<group>"; };
+		02849EA02A186B3000B71BE0 /* AppLanguageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				02849E612A18642900B71BE0 /* Multi_Language_SwiftUIApp.swift */,
-				02849E632A18642900B71BE0 /* ContentView.swift */,
+				02849E9B2A186A8B00B71BE0 /* ViewModel */,
+				02849E922A18672000B71BE0 /* Views */,
+				02849E8F2A1866A100B71BE0 /* Localizations */,
+				02849E8C2A18668600B71BE0 /* Core */,
 				02849E652A18642900B71BE0 /* Assets.xcassets */,
 				02849E672A18642900B71BE0 /* Multi_Language_SwiftUI.entitlements */,
 				02849E682A18642900B71BE0 /* Preview Content */,
@@ -127,6 +143,56 @@
 				02849E7F2A18642900B71BE0 /* Multi_Language_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = "Multi Language SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		02849E8C2A18668600B71BE0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				02849E8E2A18669100B71BE0 /* Extensions */,
+				02849E8D2A18668D00B71BE0 /* Enums */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		02849E8D2A18668D00B71BE0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				02849E9E2A186B0F00B71BE0 /* AppLanguageEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		02849E8E2A18669100B71BE0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02849EA02A186B3000B71BE0 /* AppLanguageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		02849E8F2A1866A100B71BE0 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				02849E972A18678400B71BE0 /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		02849E922A18672000B71BE0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02849E632A18642900B71BE0 /* ContentView.swift */,
+				02849E902A18671600B71BE0 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02849E9B2A186A8B00B71BE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				02849E9C2A186A9900B71BE0 /* LanguageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +281,9 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
+				ru,
+				az,
 			);
 			mainGroup = 02849E552A18642900B71BE0;
 			productRefGroup = 02849E5F2A18642900B71BE0 /* Products */;
@@ -234,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02849E6A2A18642900B71BE0 /* Preview Assets.xcassets in Resources */,
+				02849E952A18678400B71BE0 /* Localizable.strings in Resources */,
 				02849E662A18642900B71BE0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02849E912A18671600B71BE0 /* SettingsView.swift in Sources */,
+				02849EA12A186B3000B71BE0 /* AppLanguageExtension.swift in Sources */,
 				02849E642A18642900B71BE0 /* ContentView.swift in Sources */,
+				02849E9D2A186A9900B71BE0 /* LanguageViewModel.swift in Sources */,
 				02849E622A18642900B71BE0 /* Multi_Language_SwiftUIApp.swift in Sources */,
+				02849E9F2A186B0F00B71BE0 /* AppLanguageEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +369,20 @@
 			targetProxy = 02849E7A2A18642900B71BE0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02849E972A18678400B71BE0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02849E962A18678400B71BE0 /* en */,
+				02849E982A18679500B71BE0 /* az */,
+				02849E992A18679600B71BE0 /* ru */,
+				02849E9A2A18679600B71BE0 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		02849E812A18642900B71BE0 /* Debug */ = {

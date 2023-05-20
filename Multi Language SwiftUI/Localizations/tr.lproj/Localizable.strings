@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Multi Language SwiftUI
+
+  Created by YILMAZ ER on 20.05.2023.
+  
+*/
+
+"Settings"="Ayarlar";
+"Multi_Language_App"="Çoklu Dil Uygulaması";
+"Hello_World"="Selam Dünya";
+"Change_Language"="Dili değiştir";
